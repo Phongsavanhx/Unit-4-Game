@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+	<div class="header">
+		<h1>Crystal Collectors!</h1>
+	</div>
+	<div class="instructions">
+		<h3>Here's how you play:</h3>
+		
+		<ol>
+			<li>You will be given a random number at the start of the game.</li>
+			<li>There are four crystals below; by clicking on a crystal, 
+            <br>you will add a specific amount of points to your total score.</li>
+			<li>You win the game by matching your total score to the random number,</li>
+			<li>You lose the game if your total score goes above the random number.</li>
+			<li>The value of each crystal is hidden from you until you click on it.</li>
+			<li>When the game resets, the crystal values will change</li>
+        </ol>
+        <h4>Have fun! 
+            <br>Hope you enjoy!</h4>
+	</div>
+	<div class="numberToMatch">
+		<h2>Number To Get:
+			<span id= "randomNumber"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberWins"></span>
+			
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="crystals">
+		<img src="assets/images/clearquartz.jpg" class=gemImage id="clearquartz" alt="Clear Quartz">
+		<img src="assets/images/amethyst.jpg" class=gemImage id="amethyst" alt="Amethyst">
+		<img src="assets/images/rosequartz.jpg" class=gemImage id="rosequartz" alt="Rose Quartz">
+		<img src="assets/images/obsidian.jpg" class=gemImage id="obsidian" alt="Obsidian">
+	</div>
+	<div class="userTotal">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2>
+    </div>
+    
+</body>
+</html>
